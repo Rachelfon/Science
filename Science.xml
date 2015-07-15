@@ -2,7 +2,12 @@
   <block type="movement_forward" id="1" x="141" y="53">
     <next>
       <block type="controls_whileUntil" id="459" inline="false">
-        <field name="MODE">WHILE</field>
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_button" id="542">
+            <field name="OBJECT">UP</field>
+          </block>
+        </value>
         <statement name="DO">
           <block type="controls_if" id="466" inline="false">
             <value name="IF0">
