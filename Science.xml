@@ -1,14 +1,19 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="1" x="73" y="-31">
+  <block type="movement_forward" id="1" x="141" y="53">
     <next>
-      <block type="controls_if" id="421" inline="false">
-        <value name="IF0">
-          <block type="sensor_object" id="428">
-            <field name="OBJECT">LEFTFRONT</field>
+      <block type="controls_whileUntil" id="459" inline="false">
+        <field name="MODE">WHILE</field>
+        <statement name="DO">
+          <block type="controls_if" id="466" inline="false">
+            <value name="IF0">
+              <block type="sensor_object" id="487">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="movement_stop" id="497"></block>
+            </statement>
           </block>
-        </value>
-        <statement name="DO0">
-          <block type="movement_stop" id="438"></block>
         </statement>
       </block>
     </next>
