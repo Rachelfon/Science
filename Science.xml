@@ -91,7 +91,44 @@
                                                               </block>
                                                             </value>
                                                             <next>
-                                                              <block type="movement_stop" id="707"></block>
+                                                              <block type="movement_stop" id="707">
+                                                                <next>
+                                                                  <block type="movement_forward" id="755">
+                                                                    <next>
+                                                                      <block type="controls_whileUntil" id="763" inline="false">
+                                                                        <field name="MODE">UNTIL</field>
+                                                                        <value name="NUMBER">
+                                                                          <block type="sensor_button" id="770">
+                                                                            <field name="OBJECT">UP</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <statement name="DO">
+                                                                          <block type="controls_if" id="778" inline="false">
+                                                                            <value name="IF0">
+                                                                              <block type="logic_compare" id="791" inline="true">
+                                                                                <field name="OP">LT</field>
+                                                                                <value name="A">
+                                                                                  <block type="sensor_object" id="804">
+                                                                                    <field name="OBJECT">LEFTFRONT</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="811">
+                                                                                    <field name="NUM">60</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO0">
+                                                                              <block type="movement_stop" id="821"></block>
+                                                                            </statement>
+                                                                          </block>
+                                                                        </statement>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
                                                             </next>
                                                           </block>
                                                         </next>
