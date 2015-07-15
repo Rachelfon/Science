@@ -1,0 +1,10 @@
+{
+    "name": "Science",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "Science.xml",
+    "author": "Rachelfon",
+    "minimum_firmware_version": 42
+}
