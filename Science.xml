@@ -26,10 +26,13 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_stop" id="497"></block>
+              <block type="movement_stop" id="593"></block>
             </statement>
           </block>
         </statement>
+        <next>
+          <block type="movement_right" id="581"></block>
+        </next>
       </block>
     </next>
   </block>
