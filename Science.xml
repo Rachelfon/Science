@@ -8,9 +8,6 @@
             <field name="OBJECT">LEFTFRONT</field>
           </block>
         </value>
-        <statement name="DO">
-          <block type="movement_forward" id="156"></block>
-        </statement>
         <next>
           <block type="movement_stop" id="131"></block>
         </next>
